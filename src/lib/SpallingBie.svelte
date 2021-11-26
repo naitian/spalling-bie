@@ -76,7 +76,7 @@
     const ppx = await perplexity(word, model);
     const adjusted = ppx[0] + 0.77 * word.length;
     console.log(adjusted);
-    if (adjusted > 35) {
+    if (adjusted > 45) {
       return refuseWord("You can't fool me!");
     }
     acceptWord();
